@@ -1,14 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YOUR FRIEND</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bot</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
+    @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css');
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: #0f0c29;
+      font-family: 'Roboto Mono', monospace;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100vh;
+      text-align: center;
+    }
+
+    .pic {
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      overflow: hidden;
+      box-shadow: 0 0 60px rgba(189, 248, 51, 0.5);
+      margin-bottom: 2rem;
+      transition: transform 0.3s ease;
+    }
+
+    .pic:hover {
+      transform: scale(1.05);
+    }
+
+    .pic img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    h1 {
+      font-family: 'Secular One', sans-serif;
+      font-size: 3rem;
+      font-weight: 500;
+      margin: 0;
+    }
+
+    .gradient-text {
+      background: linear-gradient(90deg, #a18cd1, #fbc2eb);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: inline-block;
+      font-weight: bold;
+    }
+
+    .subtext {
+      font-family: 'Yusei Magic', sans-serif;
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+      color: #cccccc;
+      max-width: 600px;
+      padding: 0 1rem 2rem;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .buttons a {
+      text-decoration: none;
+      color: white;
+      background: #1f1b3a;
+      padding: 0.7rem 1.2rem;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background 0.3s ease, transform 0.2s ease;
+      border: 1px solid #a18cd1;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .buttons a:hover {
+      background: #a18cd1;
+      color: #0f0c29;
+      transform: scale(1.05);
+    }
+
+    .buttons i {
+      font-size: 1.2rem;
+    }
+
+    .socials {
+      margin-top: 1rem;
+    }
+
+    .socials a {
+      margin: 0 0.5rem;
+      color: #ffffffcc;
+      font-size: 1.5rem;
+      transition: color 0.3s ease;
+    }
+
+    .socials a:hover {
+      color: #fbc2eb;
+    }
+  </style>
 </head>
 <body>
-    <h1>your FRIEND is the  new  and first bot of the creator(me)</h1>
-    <p>it is a guideline bot for explicit content.</p>
-    <p>the id is @your_friendly_robot</p>
-    <p><a href="./main.py">click here</a> to download the clone file</p>
+  <div class="pic">
+    <img src="https://i.ibb.co/bRN4Yk7c/27d5678ef5ab.jpg" alt="beeson photo"/>
+  </div>
+  <h1><span id="typed"></span></h1>
+  <p class="subtext">thx for visit our website</p>
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+    var typed = new Typed('#typed', {
+      strings: ["I'm a Telegram bot", "I'm a <span class='gradient-text'>Telegram</span> bot"],
+      typeSpeed: 50, 
+      backSpeed: 25, 
+      loop: true, 
+      showCursor: true, 
+      cursorChar: '|', 
+      startDelay: 500, 
+    });
+  </script>
 </body>
 </html>
